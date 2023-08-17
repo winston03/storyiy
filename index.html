@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy reading</title>
+</head>
+<body>
+  <i id="bars" class="fa-solid fa-bars"></i>
+  <div id="yuyu" class="menus">
+    <div class="searchbar">
+      <i id="glass" class="fa-solid fa-magnifying-glass"></i>
+      <input onkeyup="filter()" type="text" id="search" placeholder="Search..">
+    </div> <br><br>
+    <ul id="ul">
+      <li class="list-item"><a href="#iwant"><span>1.</span>i want to be with u 24/7</a></li>
+    </ul>
+    <div class="box"></div>
+  </div>
+
+  <div class="container">
+    <div id="iwant">
+      <h1>I want to be with u 24/7</h1>
+      <br><br>
+      <p>They said highch is the best part of our life, but I don't think so.. I think as long as im with him thats always been the best. (chuckle haha).
+        <br><br>Yah.. I started to meet him in our college. Its the first year of my college. He is my senior. Im pretty so im quite popular, also used to become the center of attention.
+        I don't care about how people look at my appearance.. either they like it or not. Im taking a business major and yeah... thats where i saw my last and the only one.
+        <br><br>So, the third time i attended my class, i saw a guy sitting around 100m far away from me. I never saw him before and well, im a nosy person that always look around.
+        I don't have my first impression towards him.. hes just a normal boy like i've ever seen. Class has ended and its time to rush to my part time job. 
+        <br><br>"DUAR" i was overturned 180 degrees on the road.. i wasn't injured that bad tho.
+        <br>"who tf walking without eyes opened HUH!?" i said in my heart
+        <br>"sorry, but this is not my fault tho" he said with a super flat face.
+        <br><br>I was kinda annoyed but after thinking about it, it was my fault. I often saw him in the hall.. and we did eye contact several times. duh.. its annoying.
+        Turns out he is popular because he is good at sport, music and.. yah i have to admit it that he is goodlooking. he got a pointed nose but wait wait.. why am i thinking this shit ck.
+        Im just bored aint i
+        <br><br>*bell has rung* class has ended.
+        <br><br>I was sleeping and i literally know nothing what the teacher had said pfftt.. my bestfriend told me that we have to make a group for a project.
+        I got lots of friend but only a passers-by. Well, im kinda lazy and stubborn. So i decided to ask him that if we can be in the same group. Its just because he is clever otherwise i won't choose him.
+        Unexpectedly he said yes ahahaha.. we did exchange our phone number for the group project too. One tiring day has passed, i asked him
+        <br><br>"Do u wanna rest for a while? maybe watching movie, playing arcade together?"
+        <br>"Hm up to u" he said
+        <br>*Rolling my eyes* i was about to stop my plan.. HE ISN'T RESPECTING ME??
+        <br>Well, he said again "ig lets just watch a movie, im not interested in arcade."
+        <br>What changed his mind huh.. but okay he is responding.. (niat ga sih)
+        <br><br>We went for a movie and.. turns out we have the same tase of movie. He is not bad as i thought tho.. we went for dinner together and this is insane!!
+        we have the same appetite.. huh. He told me that he likes to watch anime like i do ahhaha.. no wonder i can smell his wibu sense. And surprisingly he look so excited damn..
+        thats another him that i get to see. Im happy to see the other side of him. I almost fall to that smile of him uh.. but i know its not a love. So i think we are just going to be best friend.
+        Day after day.. idk how we started chatting each other but yah he is warmer beside his flat face. We went smoothly, keep sharing out things, dirty jokes and im shocked 
+        that he understands it.. i thought he is a gay.
+        <br><br>Idk.. but after knowing him well, i started to easily get jealous.. if there is a person that is being close to him, ill fell like "he is mine" either girl or boy
+        im jealous, jealous, jealous. But maybe im just a passersby to him.. my mood change rapidly just because of that jealousy stupid things. Im annoyed and i answer him
+        coldly sometimes. Im fed up so i decided to take a small revenge on him. Its been days that we havent't hangout and it depends on his mood too.
+        <br><br>Years has passed, its the last year of his college.. i feel sad because we have to seperate but nothing remains. So i decided to spend our last moment together
+        and i just want to make him happy. Im so grateful that i have been in part of his life.. i know it sound ridiculous. But as the song said "if we never try how would we know".
+        I feel like hes such a brother to me. I just feel comfortable.
+        <br><br>Until theres one night me and him decided to walk around a garden because i wanna see stars. Until we get into a topic where i joke about his type but he is 
+        silent after i asked. So i was laying while seeing the stars and fall asleep on the bench. Oh no ive missed an important part in my life.. i was dreaming but i feel
+        something weird that he pulled my head to his shoulder and put his jacket to me. Idk what he was thinking but he said
+        <br><br> "i wish i can live longer, i wanna be urs.. the future that ill never see. Can we stay like this at this time?"
+        <br>"stupid dumbass, ur my type" he blabbed and hit my head softly.
+        <br>I woke up and shocked.. "im sorry omg how can i sleep in this situation errr.. and why u put this jacket on me bro" i speak shyly.
+        <br>"chill i can do whatever for u" 
+        <br><br>I was like.. wth this man can say this kind of thing huh?? But im not buying his flirt words. After going back home, i just feel weird of the dream that i had..
+        it feels so damn real haiyah.. how funny i wish that thing happen fr. I guess i have a little feeling then.
+
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function filter() {
+      var FilterValue, input, ul, li, i;
+
+      input = document.getElementById("search");
+      FilterValue = input.value.toUpperCase();
+      ul = document.getElementById("yuyu");
+      li = ul.getElementsByTagName("li");
+
+      for (i=0;i<li.length;i++) {
+        var a = li[i].getElementsByTagName("a")[0];
+        if(a.innerHTML.toUpperCase().indexOf(FilterValue) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+
+    const hamburger = document.getElementById("bars");
+    const menu = document.getElementById("yuyu");
+    const ul = document.getElementById("ul");
+
+    hamburger.onclick = function() {
+      hamburger.classList.toggle("active");
+      menu.classList.toggle("active");
+    }
+
+    document.onclick = function(e) {
+      if(e.target.id !== "menu" && e.target.id !== "bars" && e.target.id !== "ul") {
+        hamburger.classList.remove("active");
+        menu.classList.remove("active");
+      }
+    }
+
+
+  </script>
+</body>
+</html>

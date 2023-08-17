@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.menus {
+    /* background: black; */
+    position: fixed;
+    background: whitesmoke;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 100vh;
+    width: 20%;
+}
+
+.searchbar {
+    width: 230px;
+    /* margin-left: 50px; */
+    /* background: lime; */
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    /* position: fixed; */
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 18px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    /* background: red; */
+    height: 20px;
+    /* border-radius: 10px; */
+    /* border: 1px solid rgb(214, 199, 199); */
+    /* opacity: .4; */
+}
+
+#glass {
+    position: absolute;
+    /* color white; */
+    color: lightgrey;
+    left: 10px;
+}
+
+#bars {
+    display: none;
+}
+
+input {
+    /* color: white; */
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+li {
+    list-style-type: none;
+    /* width: 100%; */
+    transition: 0.2s ease-in-out;
+    /* background: red; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
+    display: flex;
+    /* box-shadow: 0px 5px 20px rgba(0,0,0,.5); */
+    /* background: none; */
+    text-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    padding: 10px;
+    /* background: white; */
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: black;
+}
+
+li:hover a {
+    color: white;
+}
+
+a {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+}
+
+ul {
+    /* background: red; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: 100%;
+    top: 90px;
+}
+
+.container {
+    width: 70%;
+    /* background: red; */
+    margin-left: 180px;
+    margin-top: 20px;
+    /* position: absolute; */
+}
+
+span {
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.7em;
+    /* color: black; */
+}
+
+p {
+    text-indent: 20px;
+    margin-left: 20px;
+}
+
+.box {
+    background: whitesmoke;
+    width: 19%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        /* color: pink; */
+        font-size: 30px;
+        /* text-align: center; */
+    }
+
+    .container {
+        /* background: red; */
+        width: 90%;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    #bars {
+        display: block;
+        font-size: 2em;
+        position: fixed;
+        right: 20px;
+        z-index: 1111;
+        opacity: .3;
+        top: 20px;
+    }
+
+    .menus {
+       width: 80%; 
+       display: flex;
+       height: 100vh;
+       /* background: red; */
+       /* overflow: scroll; */
+       position: fixed;
+       left: -390px;
+       box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+       transition: .2s ease-in-out;
+       justify-content: center;
+    }
+    
+    a {
+        font-size: 14px;
+        text-transform: uppercase;
+        /* text-align: left; */
+    }
+
+    ul {
+        top: 0;
+        margin: 20px;
+        /* position: fixed; */
+    }
+
+    .box {
+        display: none;
+    }
+
+    .searchbar {
+        /* background: red; */
+        /* position: absolute; */
+        display: none;
+    }
+
+    #yuyu.active {
+        left: 0;
+        /* position: absolute; */
+        position: fixed;
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+    }
+}
